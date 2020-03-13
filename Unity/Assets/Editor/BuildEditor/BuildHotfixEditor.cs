@@ -16,7 +16,7 @@ namespace ETEditor
         private const string HotfixDll = "Unity.Hotfix.dll";
         private const string HotfixPdb = "Unity.Hotfix.pdb";
 
-        static Startup()
+        static Startup() 
         {
             File.Copy(Path.Combine(ScriptAssembliesDir, HotfixDll), Path.Combine(CodeDir, "Hotfix.dll.bytes"), true);
             File.Copy(Path.Combine(ScriptAssembliesDir, HotfixPdb), Path.Combine(CodeDir, "Hotfix.pdb.bytes"), true);
