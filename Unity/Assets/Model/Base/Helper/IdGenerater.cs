@@ -23,7 +23,10 @@
 
 			return (appId << 48) + (time << 16) + ++value;
 		}
-		
+		/// <summary>
+        /// 生成实例ID
+        /// </summary>
+        /// <returns></returns>
 		public static long GenerateInstanceId()
 		{
 			return ++instanceIdGenerator;

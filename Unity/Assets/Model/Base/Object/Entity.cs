@@ -86,7 +86,11 @@ namespace ETModel
 			
 			return component;
 		}
-
+        /// <summary>
+        /// 添加组件
+        /// </summary>
+        /// <typeparam name="K">组件</typeparam>
+        /// <returns></returns>
 		public virtual K AddComponent<K>() where K : Component, new()
 		{
 			Type type = typeof (K);

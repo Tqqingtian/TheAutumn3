@@ -51,12 +51,11 @@ namespace ETHotfix
 			
 			foreach (Type type in ts)
 			{
-				// ILRuntime无法判断是否有Attribute
+				//ILRuntime无法判断是否有Attribute
 				//if (type.GetCustomAttributes(typeof (Attribute), false).Length == 0)
 				//{
 				//	continue;
 				//}
-				
 				this.types.Add(type);	
 			}
 			
@@ -156,7 +155,10 @@ namespace ETHotfix
 			}
 			this.allEvents[eventId].Add(e);
 		}
-		
+		/// <summary>
+        /// 获取类型
+        /// </summary>
+        /// <returns></returns>
 		public List<Type> GetTypes()
 		{
 			return this.types;

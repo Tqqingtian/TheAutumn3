@@ -18,7 +18,7 @@ namespace ETHotfix
 	{
 		public override void Load(MessageDispatcherComponent self)
 		{
-			self.Load();
+			self.Load();    
 		}
 	}
 

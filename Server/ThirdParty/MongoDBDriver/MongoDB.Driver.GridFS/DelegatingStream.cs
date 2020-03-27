@@ -76,6 +76,7 @@ namespace MongoDB.Driver.GridFS
         /// <inheritdoc/>
         public override long Position
         {
+            
             get { return _wrappedStream.Position; }
             set { _wrappedStream.Position = value; }
         }

@@ -76,6 +76,7 @@ namespace ETHotfix
 
 		public static void OnApplicationQuit()
 		{
+            Log.Debug("程序退出");
 			Game.Close();
 		}
 	}
